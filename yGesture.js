@@ -18,6 +18,8 @@ var curElement = null,
     longTap = true,
     enabled = true;
 
+var slice = Array.prototype.slice;
+
 // 绑定事件
 function addEvent(node, type, listener, useCapture) {
     node.addEventListener(type, listener, !!useCapture);
